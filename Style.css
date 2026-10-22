@@ -1,0 +1,96 @@
+:root {
+  --fondo: #eef2ee;
+  --superficie: #ffffff;
+  --tinta: #1b2a2c;
+  --tinta-suave: #4d6164;
+  --principal: #1f4d4f;
+  --acento: #e3b341;
+  --borde: #d3dcd6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--principal);
+  color: #f5f7f3;
+  padding: 4.5rem 1.5rem 4rem;
+  border-bottom: 6px solid var(--acento);
+}
+
+header h1 {
+  max-width: 48rem;
+  margin: 0 auto;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+main {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  display: grid;
+  gap: 1.75rem;
+}
+
+section {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-left: 6px solid var(--principal);
+  border-radius: 4px;
+  padding: 1.75rem 2rem;
+  min-height: 9rem;
+}
+
+section h2 {
+  margin: 0 0 0.75rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.6rem;
+  color: var(--principal);
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3px;
+  margin-top: 0.5rem;
+  background: var(--acento);
+}
+
+section p,
+section li {
+  color: var(--tinta-suave);
+}
+
+a {
+  color: var(--principal);
+  text-underline-offset: 3px;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 3rem 1.25rem 2.5rem;
+  }
+
+  section {
+    padding: 1.25rem 1.25rem;
+  }
+}
