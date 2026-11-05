@@ -7,7 +7,7 @@ const exp_academica = [
   {
     "titulo": "GM Sistemas Microinformáticos y Redes",
     "periodo": "2023-25",
-    "centro": "Otro cole"
+    "centro": "IES Fernando Wirtz"
   }
 ];
 
