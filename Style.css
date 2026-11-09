@@ -85,6 +85,14 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
+.item-titulo{
+  display:  inline;
+}
+
+.item-periodo{
+  display:  inline;
+}
+
 @media (max-width: 480px) {
   header {
     padding: 3rem 1.25rem 2.5rem;
