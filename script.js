@@ -14,8 +14,8 @@ const exp_academica = [
 const exp_profesional = [
   {
     "puesto": "Desarrollador web junior (prácticas)",
-    "periodo": "2024-25",
-    "empresa": "Indra Sistemas"
+    "periodo": "2026",
+    "empresa": "Nombre de la empresa"
   },
   {
     "puesto": "Dependiente",
