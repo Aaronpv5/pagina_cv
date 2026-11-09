@@ -1,26 +1,26 @@
 const exp_academica = [
   {
     "titulo": "GS Desarrollo de Aplicaciones Web",
-    "periodo": "2025-27",
-    "centro": "CPR Afundación A Coruña"
+    "periodo": "   2025-2027",
+    "centro": " CPR Afundación A Coruña"
   },
   {
     "titulo": "GM Sistemas Microinformáticos y Redes",
-    "periodo": "2023-25",
-    "centro": "IES Fernando Wirtz"
+    "periodo": "    2023-2025",
+    "centro": " IES Fernando Wirtz"
   }
 ];
 
 const exp_profesional = [
   {
     "puesto": "Desarrollador web junior (prácticas)",
-    "periodo": "2026",
-    "empresa": "Nombre de la empresa"
+    "periodo": "   2027",
+    "empresa": " Luckia"
   },
   {
     "puesto": "Dependiente",
-    "periodo": "2023-24",
-    "empresa": "Nombre del comercio"
+    "periodo": "   2023-2024",
+    "empresa": " Café Manolo"
   }
 ];
 
@@ -42,8 +42,10 @@ function mostrarExperiencia(lista, idContenedor, campos) {
     const articulo = document.createElement("article");
     articulo.className = "item";
     articulo.appendChild(crearElemento("h3", "item-titulo", item[campos.titulo]));
-    articulo.appendChild(crearElemento("p", "item-lugar", item[campos.lugar]));
+
     articulo.appendChild(crearElemento("p", "item-periodo", item.periodo));
+    
+    articulo.appendChild(crearElemento("p", "item-lugar", item[campos.lugar]));
     contenedor.appendChild(articulo);
   });
 }
